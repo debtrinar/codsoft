@@ -1,0 +1,38 @@
+Task 1
+Design a simple calculator with basic arithmetic operations.
+Prompt the user to input two numbers and an operation choice.
+
+Perform the calculation and display the result.
+CODE FOR THIS TASK IS GIVEN BELOW IN PYTHON PROGRAMMING:
+
+a = float(input("Enter the First Number:"))
+b = float(input("Enter the Second Number:"))
+print("Select from the following:")
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+x=int(input("Enter your choice:"))
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    try:
+        return a/b
+    except:
+        print("Zero Division Error")
+    
+
+if x==1:
+    print(f"{a} + {b} = {add(a,b)}")
+elif x==2:
+    print(f"{a} - {b} = {sub(a,b)}")
+elif x==3:
+    print(f"{a} * {b} = {mul(a,b)}")
+elif x==4:
+    print(f"{a} / {b} = {div(a,b)}")
+else:
+    print("Invalid Input... Please try again!!")
